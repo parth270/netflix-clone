@@ -37,10 +37,9 @@ const Row = (props) => {
         const urlMovie=await urlParams.get('v');
         console.log(urlMovie);
         setTrailer(urlMovie);
-      console.log(urlMovie);
-      return;
     }
         setTrailer('Ob4NC4D6zTU');
+    console.log('trial-1');
 
   }
 
