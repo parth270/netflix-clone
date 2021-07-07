@@ -24,6 +24,7 @@
 .cont{
     right: 20px;
     position: fixed;
+    display:flex;
     
 }
 .cont p{
