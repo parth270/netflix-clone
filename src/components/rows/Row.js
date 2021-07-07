@@ -30,20 +30,21 @@ const Row = (props) => {
   }
 
   const handleClick= async (movie)=>{
-    const url=await movieTrailer(movie?.name || movie?.title ||  "")
+        const url=await movieTrailer(movie?.name || movie?.title ||  "");
         console.log(url);
     if(url){
         const urlParams=new URLSearchParams(new URL(url).search);
         const urlMovie=await urlParams.get('v');
         console.log(urlMovie);
         setTrailer(urlMovie);
-    }else{
+      return;
+    }
       const contUrl=https://www.youtube.com/watch?v=Ob4NC4D6zTU
         const urlParams=new URLSearchParams(new URL(contUrl).search);
         const urlMovie=await urlParams.get('v');
         console.log(urlMovie);
         setTrailer(urlMovie);
-    }
+
   }
 
   return (
