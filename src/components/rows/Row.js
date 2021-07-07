@@ -31,7 +31,7 @@ const Row = (props) => {
 
   const handleClick= async (movie)=>{
     const url=await movieTrailer(movie?.name || movie?.title ||  "")
-        
+        console.log(url);
         const urlParams=new URLSearchParams(new URL(url).search);
         const urlMovie=await urlParams.get('v');
         console.log(urlMovie);
