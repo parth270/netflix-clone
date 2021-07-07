@@ -1,0 +1,36 @@
+.movie-container{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px ;
+}
+.movie-container::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    margin-left:10px;
+}
+.poster{
+    width: 100%;
+    object-fit:contain;
+    transition:  transform 450ms;
+    margin-right: 10px;
+}
+.poster:hover{
+    transform:scale(1.08);
+}
+/* .button-handler{
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    align-items:flex-end;
+} */
+.close{
+    height:35px;
+    border-radius:12px;
+    color:#fff;
+    border:none;
+    margin:10px 0;
+    background-color:red;
+    float:right;
+}
