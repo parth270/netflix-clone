@@ -19,6 +19,13 @@
 .avatar{
     width: 40px;
     object-fit: contain;
+
+}
+.cont{
     right: 20px;
     position: fixed;
+    
+}
+.cont p{
+    margin:0;
 }
