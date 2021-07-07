@@ -25,8 +25,10 @@ const Nav = () => {
         alt="logo"
         className={classes.logo}
       />
+      <div>
+      <p>Parth</p>
       <img src="avtar.png" alt="avatar" className={classes.avatar}/>
-
+        </div>
     </div>
   );
 };
