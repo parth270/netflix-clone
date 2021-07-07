@@ -38,8 +38,8 @@ const Row = (props) => {
         console.log(urlMovie);
         setTrailer(urlMovie);
     }else{
-      const URL=https://www.youtube.com/watch?v=Ob4NC4D6zTU
-        const urlParams=new URLSearchParams(new URL(URL).search);
+      const contUrl=https://www.youtube.com/watch?v=Ob4NC4D6zTU
+        const urlParams=new URLSearchParams(new URL(contUrl).search);
         const urlMovie=await urlParams.get('v');
         console.log(urlMovie);
         setTrailer(urlMovie);
